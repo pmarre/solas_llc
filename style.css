@@ -1,0 +1,17 @@
+.carousel-inner {
+  max-height: 80vh !important;
+}
+
+.about-header {
+  text-align: center;
+}
+
+#about {
+  margin-top: 20vh;
+}
+
+.parallax {
+  width: 100vw;
+  position: fixed;
+  z-index: -100;
+}
