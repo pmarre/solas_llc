@@ -7,11 +7,22 @@
 }
 
 #about {
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .parallax {
   width: 100vw;
   position: fixed;
   z-index: -100;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+section {
+  flex: 0 0 auto;
 }

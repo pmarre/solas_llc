@@ -7,7 +7,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
@@ -38,7 +43,9 @@
           </div>
         </div>
       </nav>
-      <section>
+    </header>
+    <div class="frame">
+      <section id="carousel-section">
         <div
           id="carouselSlides"
           class="carousel slide container-fluid"
@@ -70,11 +77,6 @@
         </div>
       </section>
       <section id="about">
-        <img
-          class="parallax"
-          src="https://source.unsplash.com/random"
-          alt="random"
-        />
         <div class="container-fluid">
           <div class="row">
             <div class="col about">
@@ -83,6 +85,6 @@
           </div>
         </div>
       </section>
-    </header>
+    </div>
   </body>
 </html>
