@@ -1,3 +1,3 @@
-$(function() {
-  $(".frame").onepage_scroll();
-});
+// $(function() {
+//   $(".frame").onepage_scroll();
+// });
