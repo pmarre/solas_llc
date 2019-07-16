@@ -39,6 +39,12 @@
   height: 100%;
   z-index: 100;
   box-shadow: 15px 0px 5px 5px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.about div p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .about img {
@@ -52,6 +58,7 @@
 #footer {
   width: 100%;
   height: 100vh;
+  margin-top: 50px;
 }
 
 .footer {
@@ -61,7 +68,16 @@
 .footer-1 {
   width: 100%;
   height: 50vh;
-  border: 1px solid black;
+  position: relative;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.footer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer-2 {
   width: 100%;
@@ -69,70 +85,19 @@
   border: 1px solid black;
 }
 
-/*
-.frame {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* body,
-.onepage-wrapper,
-html {
-  display: block;
-  position: static;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+.form-control {
+  border: none;
+  border-bottom: 3px solid white !important;
+  border-radius: 0;
+  margin-bottom: 10px;
+  background-color: lightseagreen;
 }
 
-.onepage-wrapper {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: relative;
-  padding: 0;
-  -webkit-transform-style: preserve-3d;
+.form-control::placeholder {
+  color: white;
 }
 
-.onepage-wrapper .section {
-  width: 100%;
-  height: 100%;
+.form-control:focus {
+  background-color: lightseagreen;
+  color: white;
 }
-
-.onepage-pagination {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  z-index: 5;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-top: -48px;
-}
-
-.disabled-onepage-scroll,
-.disabled-onepage-scroll .wrapper {
-  overflow: auto;
-}
-
-.disabled-onepage-scroll .onepage-wrapper .section {
-  position: relative !important;
-  top: auto !important;
-}
-.disabled-onepage-scroll .onepage-wrapper {
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  transform: none !important;
-  -ms-transform: none !important;
-  min-height: 100%;
-}
-
-.disabled-onepage-scroll .onepage-pagination {
-  display: none;
-}
-
-body.disabled-onepage-scroll,
-.disabled-onepage-scroll .onepage-wrapper,
-html {
-  position: inherit;
-} */
