@@ -1,0 +1,30 @@
+.carousel-inner {
+  max-height: 80vh !important;
+}
+
+#solas_logo {
+  font-weight: 800;
+  color: #000;
+}
+
+.nav-item {
+  font-weight: 100;
+  color: #000;
+}
+
+.nav-item:hover {
+  color: coral;
+}
+
+.carousel-inner > .inner > img {
+  margin: auto;
+  width: 100%;
+}
+
+.about-heading {
+  text-align: center;
+}
+
+#about {
+  max-height: 100vh;
+}

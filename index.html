@@ -3,12 +3,24 @@
   <head>
     <title>Solas, LLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/onepage-scroll@1.3.0/onepage-scroll.css"
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/onepage-scroll@1.3.0/jquery.onepage-scroll.min.js"></script> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
@@ -38,7 +50,11 @@
           </div>
         </div>
       </nav>
-      <section>
+    </header>
+    <div class="body">
+      <div class="container-fluid min-vw-100 max-vh-80">
+      <div class="row align-items-center ">
+      <section id="carousel-section col-xs">
         <div
           id="carouselSlides"
           class="carousel slide container-fluid"
@@ -68,21 +84,54 @@
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </section>
       <section id="about">
-        <img
-          class="parallax"
-          src="https://source.unsplash.com/random"
-          alt="random"
-        />
         <div class="container-fluid">
-          <div class="row">
-            <div class="col about">
-              <h2 class="about-header">About Solas</h2>
+          <div class="about">
+            <div class="info">
+              <h2>Here is more information about us</h2>
+              <p>
+                This is a paragraph. There will be more text here. This is a
+                paragraph. There will be more text here. This is a paragraph.
+                There will be more text here. This is a paragraph. There will be
+                more text here.
+              </p>
+              <button class="btn btn-secondary">Contact us</button>
             </div>
+            <img
+              class="info-img"
+              src="https://source.unsplash.com/random"
+              alt="random image"
+            />
           </div>
         </div>
       </section>
-    </header>
+      <section id="footer">
+        <div class="row">
+          <div class="col footer">
+            <div class="footer-1">
+              <div class="footer-content">
+                <h2 class="cta">Are you ready to start?</h2>
+                <input
+                  type="email"
+                  name="email"
+                  class="email_input form-control"
+                  placeholder="email@email.com"
+                />
+                <input
+                  type="submit"
+                  name="submit"
+                  class="submit btn btn-primary"
+                  value="Submit"
+                />
+              </div>
+            </div>
+            <div class="footer-2">footer 2</div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
