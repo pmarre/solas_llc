@@ -26,5 +26,44 @@
 }
 
 #about {
-  max-height: 100vh;
+  height: 100vh;
+}
+
+.about-image-container {
+  height: 100%;
+  width: 100%;
+}
+
+#about-img {
+  height: 100%;
+  width: 100%;
+}
+
+.heading-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.heading-contain {
+  text-align: center;
+}
+
+#cta {
+  margin: 0;
+  height: 50vh;
+}
+
+#email {
+  background-color: transparent;
+  color: blue;
+  border: none;
+  border-bottom: 3px solid black;
+  border-radius: 0;
+}
+
+#cta-heading {
+  text-align: center;
 }
