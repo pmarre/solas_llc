@@ -1,33 +1,42 @@
-function isElementInViewport(elem) {
-  var $elem = $(elem);
+const card = document.querySelectorAll('.card');
+const aboutImage = document.querySelector('.ab-img');
 
-  // Get the scroll position of the page.
-  var scrollElem =
-    navigator.userAgent.toLowerCase().indexOf('webkit') != -1 ? 'body' : 'html';
-  var viewportTop = $(scrollElem).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
+var isInViewport = function(elem) {
+  var bounding = elem.getBoundingClientRect();
+  return (
+    bounding.top >= 0 &&
+    bounding.left >= 0 &&
+    bounding.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.right <=
+      (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
 
-  // Get the position of the element on the page.
-  var elemTop = Math.round($elem.offset().top);
-  var elemBottom = elemTop + $elem.height();
+window.addEventListener(
+  'scroll',
+  () => {
+    var interval = 200;
+    [...card].forEach((x, index) => {
+      if (isInViewport(x)) {
+        setTimeout(() => x.classList.add('start'), index * interval);
+      }
+    });
+  },
+  false
+);
 
-  return elemTop < viewportBottom && elemBottom > viewportTop;
-}
+window.addEventListener(
+  'scroll',
+  () => {
+    var childrenEl = document.querySelector('.heading-contain').children;
 
-// Check if it's time to start the animation.
-function checkAnimation() {
-  var $elem = $('.card-1');
-
-  // If the animation has already been started
-  if ($elem.hasClass('start')) return;
-
-  if (isElementInViewport($elem)) {
-    // Start the animation
-    $elem.addClass('start');
-  }
-}
-
-// Capture scroll events
-$(window).scroll(function() {
-  checkAnimation();
-});
+    var interval = 100;
+    [...childrenEl].forEach((y, index) => {
+      if (isInViewport(y)) {
+        setTimeout(() => y.classList.add('animate'), index * interval);
+      }
+    });
+  },
+  false
+);
