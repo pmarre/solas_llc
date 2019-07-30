@@ -19,42 +19,40 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/onepage-scroll@1.3.0/jquery.onepage-scroll.min.js"></script> -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="jscript.js" async defer></script>
   </head>
   <body class="max-w-100">
     <header class="container-fluid w-100">
-        <nav class="navbar navbar-expand-sm row">
-          <a id="solas_logo" class="navbar-brand col-xs-1" href="#">Solas</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end col-xs-2"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">About</a>
-              <a class="nav-item nav-link" href="#">Services</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
-              <a class="nav-item nav-link" href="#">Contact</a>
-            </div>
+      <nav class="navbar navbar-expand-sm row">
+        <a id="solas_logo" class="navbar-brand col-xs-1" href="#">Solas</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end col-xs-2"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Services</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
-      <div class="container-fluid w-100 mb-5">
-        <div class="row no-gutters">
+    <div class="container-fluid w-100 mb-5">
+      <div class="row no-gutters">
         <section id="carousel-section" class="col-xs vw-100 mb-10">
           <div
             id="carouselSlides"
@@ -65,7 +63,6 @@
               <div class="carousel-item active">
                 <img
                   src="https://source.unsplash.com/random"
-                  
                   class="d-block w-100 max-vh-80"
                   alt="..."
                 />
@@ -86,63 +83,106 @@
               </div>
             </div>
           </div>
-        </div>
         </section>
-        </div>
-        <section id="about" >
-          <div class="mt-5 mb-5 container-fluid">
-            <div class="contain row">
-              <div class="right-div col-xs-6 col-lg-5">
-                <div class="heading-contain align-middle">
-                <h1 class="about-heading mb-2">About us</h1>
-                <p>This is a paragraph. There will be more text here. This is a
-                  paragraph. There will be more text here. This is a paragraph.
-                  There will be more text here. This is a paragraph. There will be
-                  more text here.</p>
-                  <button type="button" class="btn btn-primary rounded-pill px-4 mb-sm-3">Contact us</button>
-                </div>
-              </div>
-              
-                <div class="about-image-container col-xs-6 col-lg-7">
-                <img class="image-fluid" id="about-img" src="https://source.unsplash.com/random" alt="...">
-              
-              </div>
+      </div>
+    </div>
+    <section id="about">
+      <div class="container-fluid mt-5 mb-5 ">
+        <div class="contain row justify-content-center">
+          <div class="left-div col-10 col-lg-5 my-3 my-md-0">
+            <div class="heading-contain align-middle">
+              <h1 class="about-heading mb-2">About us</h1>
+              <p>
+                This is a paragraph. There will be more text here. This is a
+                paragraph. There will be more text here. This is a paragraph.
+                There will be more text here. This is a paragraph. There will be
+                more text here.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary rounded-pill px-4 mb-sm-3"
+              >
+                Contact us
+              </button>
             </div>
           </div>
-        </section>
-        <section id="service-cards">
-          <div class="card-container container-fluid">
-          <div class="card card-1" style="width: 18rem;">
-            <img class="card-img-top" src="https://source.unsplash.com/random" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card card-2" style="width: 18rem;">
-            <img class="card-img-top" src="https://source.unsplash.com/random" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card card-3" id="card-test" style="width: 18rem;">
-            <img class="card-img-top" src="https://source.unsplash.com/random" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          </div>
-        </section>
 
-        <section id="cta">
-          <div class="jumbotron m-0 no-gutters">
-            <div class="container-fluid">
-              <div class="d-flex flex-column justify-content-center">
-                <h2 id="cta-heading">Try us out</h2>
-                <input class="mb-2 form-control" type="email" id="email" placeholder="Enter email address">
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-              </div>
+          <div class="about-image-container col-12 col-lg-7">
+            <img
+              class="image-fluid"
+              id="about-img"
+              src="https://source.unsplash.com/random"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service-cards">
+      <div class="row justify-content-center">
+        <div class=" col-10 col-md-4 my-3">
+          <div class="card card-1">
+            <img
+              class="card-img-top"
+              src="https://source.unsplash.com/random"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
+        <div class=" col-10 col-md-4 my-3">
+          <div class="card card-2">
+            <img
+              class="card-img-top"
+              src="https://source.unsplash.com/random"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class=" col-10 col-md-4 my-3">
+          <div class="card card-3" id="card-test">
+            <img
+              class="card-img-top"
+              src="https://source.unsplash.com/random"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="jumbotron m-0 no-gutters">
+        <div class="container-fluid">
+          <div class="d-flex flex-column justify-content-center">
+            <h2 id="cta-heading">Try us out</h2>
+            <input
+              class="mb-2 form-control"
+              type="email"
+              id="email"
+              placeholder="Enter email address"
+            />
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
