@@ -1,6 +1,12 @@
-.carousel-inner {
-  max-height: 80vh !important;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+/* --- WEB NAV --- */
 
 #solas_logo {
   font-weight: 800;
@@ -16,22 +22,30 @@
   color: coral;
 }
 
+/* --- BOOTSTRAP CAROUSEL --- */
+
+.carousel-inner {
+  max-height: 80vh !important;
+}
+
 .carousel-inner > .inner > img {
   margin: auto;
   width: 100%;
 }
+
+/* --- ABOUT PAGE --- */
 
 .about-heading {
   text-align: center;
 }
 
 #about {
-  height: 100vh;
+  height: auto;
 }
 
 .about-image-container {
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: auto;
 }
 
 #about-img {
@@ -51,6 +65,36 @@
   text-align: center;
 }
 
+.left-div h1,
+.left-div p,
+.left-div button {
+  opacity: 0;
+}
+
+.about-image-container {
+  transform: translateX(100%);
+  animation: 1s linear 1s 1 slideLeft forwards;
+}
+
+/*  --- SERVICES --- */
+
+.contain {
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.card {
+  margin: 0 20px;
+  opacity: 0;
+}
+
+/* --- FOOTER --- */
+
 #cta {
   margin: 0;
   height: 50vh;
@@ -68,58 +112,15 @@
   text-align: center;
 }
 
-.right-div h1 {
-  /* animation: 0.5s linear 1.4s 1 slideDown forwards; */
-  opacity: 0;
-}
-
-.right-div p {
-  /* animation: 0.5s linear 1.2s 1 slideDown forwards; */
-  opacity: 0;
-}
-
-.right-div button {
-  /* animation: 0.5s linear 1s 1 slideDown forwards; */
-  opacity: 0;
-}
-
-.animate {
-  animation: 0.5s linear 0s 1 slideDown forwards;
-}
-
-.about-image-container {
-  transform: translateX(100%);
-  animation: 1s linear 1s 1 slideLeft forwards;
-}
-
-.contain {
-  height: 100vh;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.card {
-  margin: 0 20px;
-  opacity: 0;
-}
+/* --- ACTION CLASSES --- */
 
 .start {
   animation: 0.5s linear 0s 1 slideDown forwards;
 }
 
-/* .card-2 {
-  animation: 0.5s linear 1.2s 1 slideDown forwards;
-  opacity: 0;
+.animate {
+  animation: 0.5s linear 0s 1 slideDown forwards;
 }
-
-.card-3 {
-  animation: 0.5s linear 1.4s 1 slideDown forwards;
-  opacity: 0;
-} */
 
 /* --- KEYFRAMES --- */
 
@@ -140,5 +141,11 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-image-container {
+    height: 100%;
   }
 }
