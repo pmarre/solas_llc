@@ -3,15 +3,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none !important;
+  color: #000;
   font-family: 'Ubuntu', sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-size: 16px;
 }
 
 h1 {
-  font-family: 'Gravitas One', cursive;
+  font-family: 'Playfair Display', cursive;
   font-size: 2rem;
 }
 
@@ -62,13 +62,14 @@ h1 {
 
 .grid-item:hover {
   cursor: pointer;
-  background-color: rgba(32, 178, 170, 0.7);
+  background-color: rgba(32, 178, 170, 0.8);
 }
 
 .catergory {
   position: absolute;
   bottom: 40px;
   right: 40px;
+  color: #fff;
 }
 
 .nav:hover {
@@ -85,8 +86,192 @@ h1 {
   left: 15px;
 }
 
+.nav-info h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav-info ul li a {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #fff;
+}
+
 .heading {
   position: absolute;
   left: 40px;
   bottom: 40px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hover-detail {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+
+.hover-detail h2 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', cursive;
+  color: #fff;
+}
+
+.hover-detail p {
+  margin: 15px 0;
+  color: #fff;
+}
+
+.hover-detail a {
+  padding-bottom: 5px;
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+.hover-detail a:hover {
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+
+/* CONTENT */
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.section-one,
+.section-two {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.content-one,
+.content-two {
+  flex: 1;
+  flex-basis: 50%;
+}
+
+.content-two {
+  order: 2;
+}
+
+.content-one h1,
+.content-two h1 {
+  font-size: 4rem;
+}
+
+.content-one p,
+.content-two p {
+  margin: 30px 0;
+}
+
+.content-one-img,
+.content-two-img {
+  flex: 1;
+  flex-basis: 50%;
+}
+
+.content-link {
+  padding-bottom: 5px;
+  border-bottom: 3px solid lightseagreen;
+  color: lightseagreen;
+}
+
+.content-link:hover {
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-content p {
+  line-height: 1.5;
+}
+
+.carousel-header {
+  text-align: center;
+}
+
+.carousel-header h1 {
+  font-size: 4rem;
+}
+
+.link {
+  margin: 20px 0;
+}
+
+.carousel {
+  margin: 20px auto 60px;
+}
+
+.carousel-item img {
+  max-height: 450px;
+  min-width: auto;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  margin-top: 60px;
+}
+.footer-heading h1 {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-content-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sign_up-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sign_up-form input[type='text'],
+.sign_up-form input[type='email'] {
+  flex: 1;
+  flex-basis: content;
+}
+
+.sign_up-form input[type='submit'] {
+  width: 50%;
+}
+
+.sign_up-form input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.form-container h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sign_up {
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 5px;
 }
