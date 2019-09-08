@@ -62,7 +62,6 @@ h1 {
 
 .grid-item:hover {
   cursor: pointer;
-  background-color: rgba(32, 178, 170, 0.8);
 }
 
 .catergory {
@@ -228,6 +227,7 @@ footer {
 .footer-heading h1 {
   color: #fff;
   margin-top: 40px;
+  font-size: 2.5rem;
 }
 
 .footer-content {
@@ -244,29 +244,46 @@ footer {
 
 .sign_up-form {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column !important;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.sign_up-form input[type='text'],
-.sign_up-form input[type='email'] {
-  flex: 1;
-  flex-basis: content;
+.sign_up-form input[type='submit'] {
+  margin-top: 10px;
+  color: #20b2aa;
+  background-color: transparent;
+  max-width: 75px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 3px solid #20b2aa;
+  font-size: 1.25rem;
 }
 
-.sign_up-form input[type='submit'] {
-  width: 50%;
+.sign_up-form input[type='submit']:hover {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.sign_up-form input[type='text'] {
+  margin-right: 10px;
 }
 
 .sign_up-form input::placeholder {
-  color: #fff;
+  color: #a8a8a8;
   opacity: 1;
+}
+
+.form-container {
+  flex: 1;
+  flex-basis: 100%;
+  width: 100%;
 }
 
 .form-container h2 {
   color: #fff;
   margin-bottom: 20px;
+  font-family: 'Playfair Display', cursive;
 }
 
 .sign_up {
@@ -274,4 +291,38 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 10px 5px;
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info p {
+  color: #a8a8a8;
+  line-height: 1.5;
+  width: 75%;
+  margin: 20px 0;
+}
+
+.contact-info {
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.icon-container {
+  color: #fff;
+}
+
+.copyright {
+  color: #a8a8a8;
+  font-size: 0.75rem;
+  margin-top: 20px;
+}
+
+.copyright a {
+  font-size: 0.75rem;
+  text-decoration: underline !important;
 }
