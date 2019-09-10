@@ -141,6 +141,17 @@ h1 {
   width: 80%;
 }
 
+.image {
+  width: 100%;
+  max-height: 500px;
+}
+
+.image-2 {
+  height: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
 .section-one,
 .section-two {
   display: flex;
@@ -153,11 +164,12 @@ h1 {
 .content-one,
 .content-two {
   flex: 1;
-  flex-basis: 50%;
+  flex-basis: 45%;
 }
 
 .content-two {
   order: 2;
+  margin-left: 20px;
 }
 
 .content-one h1,
